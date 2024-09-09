@@ -1,5 +1,102 @@
-title: Aaron Damian
-logo: /img/logo.png
-#description:: text below image
-#show_downloads: true
-theme: jekyll-theme-minimal
+site:
+  title: "Aaron Damian - Portfolio"
+  css_file: "./style.css"
+  js_file: "./script.js"
+
+navbar:
+  home:
+    name: "Aaron Damian"
+    contact_info:
+      - type: "email"
+        icon: "envelop.png"
+        value: "aarondamian@gmail.com"
+      - type: "phone"
+        icon: "phone.png"
+        value: "+923095002170"
+  menu:
+    - title: "About Me"
+      link: "#about-me"
+    - title: "Skills"
+      link: "#skills"
+    - title: "Projects"
+      link: "#projects"
+    - title: "Recommendations"
+      link: "#recommendations"
+
+sections:
+  about_me:
+    id: "about-me"
+    image: "linkedIn profile.jpg"
+    greeting: "Hi, I'm Aaron Damian!"
+    waving_hand_icon: "waving-hand.png"
+    intro_text: "I am a Data Scientist with 2 years of experience in Data Analytics and Development. I have worked on applications and microservices deployed on IBM Cloud. I have completed many certificates from Coursera and eager to work in Google one day as a Data Engineer."
+
+  skills:
+    id: "skills"
+    title: "Skills"
+    all_skills:
+      - name: "HTML"
+        experience: "3 years experience"
+        icon: "html.png"
+        background_color: "rgb(255, 225, 180)"
+      - name: "JavaScript"
+        experience: "3 years experience"
+        icon: "javascript.png"
+        background_color: "rgb(255, 249, 180)"
+      - name: "CSS"
+        experience: "3 years experience"
+        icon: "css.png"
+        background_color: "rgb(196, 222, 255)"
+      - name: "Java"
+        experience: "1 year experience"
+        icon: "java.png"
+        background_color: "rgb(207, 194, 255)"
+      - name: "Python"
+        experience: "3 years experience"
+        icon: "python.png"
+        background_color: "rgb(209, 255, 190)"
+      - name: "React.js"
+        experience: "1 year experience"
+        icon: "react.png"
+        background_color: "rgb(223, 223, 223)"
+
+  projects:
+    id: "projects"
+    title: "Projects"
+    all_projects:
+      - name: "Webdevelopment"
+        description: "Developed a secure website known as Amazon.com, using HTML, CSS, JavaScript and IBM Watson Assistant."
+      - name: "Desktop App"
+        description: "Developed a Hotel Management app for one of the biggest hotels in Dubai, using Java."
+      - name: "Freelancing"
+        description: "Doing side hustles like Freelancing and Remote jobs for more than 3 years."
+
+  recommendations:
+    id: "recommendations"
+    title: "Recommendations"
+    all_recommendations:
+      - "Aaron's Web development prowess is unparalleled; a true team player and natural leader. His insatiable curiosity keeps the team on their toes."
+      - "I'm in awe of Aaron's quick learning abilities in Web development. A collaborative spirit and keen initiative make him a stellar team player."
+      - "Highly recommend Aaron - a Web development prodigy. With his can-do attitude and inquisitive mind, he's destined to lead and innovate."
+
+  recommendation_form:
+    id: "contact"
+    title: "Leave a Recommendation"
+    fields:
+      - placeholder: "Name (Optional)"
+        type: "text"
+      - placeholder: "Message"
+        type: "textarea"
+    submit_button:
+      text: "Submit"
+      action: "addRecommendation()"
+
+footer:
+  home_link:
+    icon: "arrow_up.svg"
+    link: "#home"
+
+popup:
+  image: "tick.png"
+  message: "Your Recommendation has been added!"
+  ok_button: "showPopup(false)"
